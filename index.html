@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> projcet7</title>
+    <link rel="stylesheet" href="index.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  
+</head>
+<body>
+     <header>
+       
+           <div class="logo">
+              <img src="https://image.similarpng.com/file/similarpng/original-picture/2020/11/Coffee-logo-design-on-transparent-background-PNG.png" alt=""     >
+                <h2>  SeavLinh2026</h2>
+
+           </div>
+          <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div><div></div><div></div>
+         </div>
+          <nav id ="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+    
+     </header>
+     <main>
+        <section class="project">
+            <div class="project_card">
+                <a href="bread.html"> Order Bread</a>
+                 <img src=" https://images.squarespace-cdn.com/content/v1/5da3c95574c72c273ebc24c6/cb91a63a-e233-4ddf-85e9-b5858733419e/20231005-Bread-SHop2207.jpg" alt="">
+
+            </div>
+            <div class="project_card">
+                <a href="coffee.html">Order Coffee </a>
+                <img src=" https://img.pikbest.com/templates/20250228/psd-menu-coffee-shop-or-restaurant-template_11564229.jpg!w700wp" alt="">
+            </div>
+            <div class="project_card">
+             <a href="cake.html">Order Cake</a>
+                 <img src=" https://img.pikbest.com/templates/20210514/bg/7b3155ec1a303e5b23f21a086d9591cf_4194.png!sw800" alt="">
+            </div>
+        </section>
+     </main>
+
+     <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3 class="footer-title">SeavLinh Shop Bread</h3>
+        <p class="footer-text">
+          Your trusted partner for fresh, artisan-quality bread, coffee, and cakes.
+          Made with passion, served with love.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="home.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">Our Products</h3>
+        <ul class="footer-list">
+          <li><a href="#" class="footer-link">Fresh Bread</a></li>
+          <li><a href="#" class="footer-link">Premium Coffee</a></li>
+          <li><a href="#" class="footer-link">Delicious Cakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">Contact Us</h3>
+        <div class="footer-text">
+          <p> <i class="fa-solid fa-location-dot"></i>123 Bakery Street, City</i> </p>
+          <p> <i class="fa-solid fa-phone-volume"></i>  +1 (555) 123-4567</p>
+          <p> <i class="fa-solid fa-envelope"></i> info@seavlinhshop.com </p> 
+        </div>                                                                                
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2024 SeavLinh Shop Bread. All rights reserved. | Made with hearts for bread lovers
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    const toggle = document.querySelector('.menu-toggle');
+
+    function toggleMenu() {
+      nav.classList.toggle('active');
+    }
+
+    document.addEventListener('click', e => {
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove('active');
+      }
+    });
+  </script>
+     
+</body>
+</html>
+   
